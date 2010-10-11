@@ -1,0 +1,48 @@
+<doctype !html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>D&D4E Encounter Manager</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="js/jquery.editable-1.3.3.min.js"></script>
+    <script src="js/ecman.js"></script>
+</head>
+<body>
+    <noscript>
+        This page requires JavaScript
+    </noscript>
+    <div id="header">
+        <h1>D&amp;D4E Encounter Manager</h1>
+    </div>
+    <div id="content">
+        <button type="button" class="clean-green-full" onclick="save_to_csv">Save to CSV</button>
+        <button type="button" class="clean-green-full" onclick="load_from_csv">Load from CSV</button>
+        <p>Please note, these buttons don't do anything and this tool is extremely incomplete.</p>
+    <table id="encounter" border="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <th></th>
+            <th>Monster/Character</th>
+            <th>Identifier</th>
+            <th>Initiative</th>
+            <th>HP</th>
+        </tr>
+        <tr>
+            <td><button type="button" class="clean-green" onclick="add_new_p()">+</button></td>
+            <td><input id="add_new_pName" value="Name"></td>
+            <td><input id="add_new_pIdentifier" value="Identifier"></td>
+            <td><input id="add_new_pInitiative" value="Initiative"></td>
+            <td><input id="add_new_pHP" value="HP"></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <!--<div id="footer">-->
+    <!--    Site design &copy; 2010 Kunal Sarkhel. All Rights Reserved.-->
+    <!--    All site content own by their respective owners.-->
+    <!--</div>-->
+</body>
+</html>
